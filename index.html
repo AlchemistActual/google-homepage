@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+    header {
+        
+        background: rgb(202, 202, 202);
+        display: flex;
+
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+    li {
+        display: inline;
+    }
+    main {
+        padding-top: 200px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        grid-column: 1;
+    }
+    footer {
+        display: flex;
+        background: #f2f2f2;
+        
+    }
+    .bottomright {
+        justify-content: right;
+        
+    }
+    .logosearch {
+        display: grid;
+    }
+
+    .search {
+    height: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        column-gap: 10px;
+    }
+</style>
 
 
 <body>
+<header>
+    <ul>
+        <li> <a href="">About</a></li>
+        <li> <a href="">Store</a></li>
+        <li> <a href="">Gmail</a></li>
+        <li> <a href="">Images</a></li>
+    </ul>
 
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <div>  </div>
+</header>
+
+<main>
+<div class="logosearch">
+    <div><img id="googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
+        
+    <div class="search">
+        <form>
+<input id="search" type="text" name="search">
+        </form>
+</div>
+<div class="buttons">
+    <div class="gsearch">
+        <button type="button"> Google search</button>
+    </div>
+    <div class="lucky">
+        <button type="button"> I'm feeling lucky</button>
+    </div>
+</div>
+
+</main>
+<footer>
+    <ul>
+        <li> <a href="">Advertising</a></li>
+        <li> <a href="">Business</a></li>
+        <li> <a href="">How Search works</a></li>
+        
+    </ul>
+    <ul class="bottom right">
+        <li> <a href="">Privacy</a></li>
+        <li> <a href="">Terms</a></li>
+        <li> <a href="">Settings</a></li>
+
+    </ul>
+</footer>
 
 </body>
 
