@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <style>
-    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
    li a {
         padding: 10px 12px;
         display: block;
@@ -23,13 +26,24 @@
         display: flex;
         float: right;
     }
-        .menusprite {
+    .menusprite {
         max-height: 24px;
+    }
+    .signin {
+        background-color: rgb(78, 149, 241);
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: small;
     }
     .central {
         display: flex;
         position: relative;
         justify-content: center;
+        padding-left: 150px;
         padding-top: 150px;
         padding-bottom: 25px;
     }
@@ -37,11 +51,34 @@
         display: flex;
         justify-content: center;
     }
+    .search {
+        width: 470px;
+        height: 40px;
+        border-radius: 30px;
+        border-color: rgb(240, 240, 240);
+        
+    }
     .buttons {
-        padding-top: 15px;
+        padding-top: 25px;
         column-gap: 10px;
         display: flex;
         justify-content: center;
+    }
+    .gsearch {
+        background-color: rgb(240, 240, 240);
+        border: none;
+        color:rgb(102, 102, 102);
+        padding: 8px 16px;
+        border-radius: 2px;
+        
+    }
+    .flucky {
+        background-color: rgb(240, 240, 240);
+        border: none;
+        color:rgb(102, 102, 102);
+        padding: 8px 16px;
+        border-radius: 2px;
+        
     }
     .bottomleft {
         float: left;
@@ -73,7 +110,7 @@
             <li><a href="">Gmail</a></li>
             <li><a href="">Images</a></li>
             <li><a href=""><img class="menusprite" src=/img/menu.png></a></li>
-            <li><a href=""><button class="sign in"> Sign in</button></a></li>
+            <li><a href=""><button class="signin"> Sign in</button></a></li>
         </ul>
         
     </header>
@@ -84,7 +121,7 @@
            
         </div>
         <div class="field">
-            <input  type="text">
+            <input class="search" type="text">
         </form>
     </div>
     <form>
