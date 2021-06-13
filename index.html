@@ -1,124 +1,114 @@
 <!DOCTYPE html>
 <html>
 <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: small;
-    }
-    header {
-        background: rgb(202, 202, 202);
-        display: flex;
-        flex-direction: row;
-        position: fixed;
-        width: 100%;
+    
+   li a {
+        padding: 10px 12px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+       
     }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        display: inline;
-    }
-    li {
-        display: inline;
-    }
-    main {
-        padding-top: 200px;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        
-    }
-    footer {
-        display: flex;
-        background: #f2f2f2;
-        
+        overflow: hidden;
     }
     .topleft {
+        display: flex;
         float: left;
-        justify-content: flex-start;
     }
     .topright {
+        display: flex;
         float: right;
-        justify-content: flex-end;
     }
-    .bottomright {
-        justify-content: right;
-        
+        .menusprite {
+        max-height: 24px;
     }
-   #menu {
-       max-height: 24px;
-   }
-    .search {
-    height: 30px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    .central {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding-top: 150px;
+        padding-bottom: 25px;
     }
-    #search {
-
-    }
-    .buttons {
+    .field {
         display: flex;
         justify-content: center;
-        padding-top: 10px;
-        column-gap: 10px;
     }
-</style>
+    .buttons {
+        padding-top: 15px;
+        column-gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .bottomleft {
+        float: left;
+        display: flex;
+        text-align: center;
+
+    }
+    .bottomright {
+        float: right;
+        display: flex;
+        text-align: center;
+    }
+    .bottombar {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
 
 
 <body>
-    <header>
-        <nav class="top">
-            <ul class="topleft">
-           <li> <a href="">About</a> </li>
-            <li> <a href="">Store</a> </li>
+    <header class="topbar">
+        <ul class="topleft">
+            <li><a href="">About</a></li>
+            <li><a href="">Store</a></li>
+        </ul>
+        <ul class="topright">
+            <li><a href="">Gmail</a></li>
+            <li><a href="">Images</a></li>
+            <li><a href=""><img class="menusprite" src=/img/menu.png></a></li>
+            <li><a href=""><button class="sign in"> Sign in</button></a></li>
+        </ul>
+        
+    </header>
+
+    <main class="container">
+        <div class="central">
+            <img class="logo" src="img/logo.svg">
+           
+        </div>
+        <div class="field">
+            <input  type="text">
+        </form>
+    </div>
+    <form>
+        <div class="buttons">
+            <button class="gsearch"> Google Search</button>
+            <button class="flucky"> I'm Feeling Lucky</button>
+        </div>
+    </main>
+  
+
+    <footer class="bottombar">
+            <ul class="bottomleft">
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How Search works</a></li>
             </ul>
-            <ul class="topright">
-               <li> <a href="">Gmail</a> </li>
-               <li> <a href="">Images</a> </li>
-               <li> <a href=""><img id="menu" src="img/menu.png"></a> </li>
-            <button class="signin"> Sign in</button> </li>
-            </ul> 
-        </nav>
-</header>
-
-<main>
-<div class="logosearch">
-    <div><img id="googlelogo" src="img/logo.svg"></div>
-</main>  
-<form>
-    <div class="search">
-        
-<input id="search" type="text" name="search">
-        
-</div>
-<div class="buttons">
-    <div class="gsearch">
-        <button type="button"> Google search</button>
-    </div>
-    <div class="lucky">
-        <button type="button"> I'm Feeling Lucky</button>
-    </div>
-</div>
-</form>
-
-<footer>
-    <ul class=bottomleft>
-        <li> <a href="">Advertising</a></li>
-        <li> <a href="">Business</a></li>
-        <li> <a href="">How Search works</a></li>
-        
-    </ul>
-    <ul class="bottomright">
-        <li> <a href="">Privacy</a></li>
-        <li> <a href="">Terms</a></li>
-        <li> <a href="">Settings</a></li>
-
-    </ul>
-</footer>
-
+            
+       
+            <ul class="bottomright">
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+    </footer>
 </body>
-
-
 
 </html>
