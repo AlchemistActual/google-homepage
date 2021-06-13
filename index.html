@@ -6,10 +6,11 @@
         font-size: small;
     }
     header {
-        
         background: rgb(202, 202, 202);
         display: flex;
-
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
     }
     ul {
         list-style-type: none;
@@ -25,26 +26,36 @@
         display: flex;
         justify-content: center;
         position: relative;
-        grid-column: 1;
+        
     }
     footer {
         display: flex;
         background: #f2f2f2;
         
     }
+    .topleft {
+        float: left;
+        justify-content: flex-start;
+    }
+    .topright {
+        float: right;
+        justify-content: flex-end;
+    }
     .bottomright {
         justify-content: right;
         
     }
-    .logosearch {
-        display: grid;
-    }
-
+   #menu {
+       max-height: 24px;
+   }
     .search {
     height: 30px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    }
+    #search {
+
     }
     .buttons {
         display: flex;
@@ -56,43 +67,49 @@
 
 
 <body>
-<header>
-    <ul>
-        <li> <a href="">About</a></li>
-        <li> <a href="">Store</a></li>
-        <li> <a href="">Gmail</a></li>
-        <li> <a href="">Images</a></li>
-    </ul>
-
+    <header>
+        <nav class="top">
+            <ul class="topleft">
+           <li> <a href="">About</a> </li>
+            <li> <a href="">Store</a> </li>
+            </ul>
+            <ul class="topright">
+               <li> <a href="">Gmail</a> </li>
+               <li> <a href="">Images</a> </li>
+               <li> <a href=""><img id="menu" src="img/menu.png"></a> </li>
+            <button class="signin"> Sign in</button> </li>
+            </ul> 
+        </nav>
 </header>
 
 <main>
 <div class="logosearch">
-    <div><img id="googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
-        
+    <div><img id="googlelogo" src="img/logo.svg"></div>
+</main>  
+<form>
     <div class="search">
-        <form>
+        
 <input id="search" type="text" name="search">
-        </form>
+        
 </div>
 <div class="buttons">
     <div class="gsearch">
         <button type="button"> Google search</button>
     </div>
     <div class="lucky">
-        <button type="button"> I'm feeling lucky</button>
+        <button type="button"> I'm Feeling Lucky</button>
     </div>
 </div>
+</form>
 
-</main>
 <footer>
-    <ul>
+    <ul class=bottomleft>
         <li> <a href="">Advertising</a></li>
         <li> <a href="">Business</a></li>
         <li> <a href="">How Search works</a></li>
         
     </ul>
-    <ul class="bottom right">
+    <ul class="bottomright">
         <li> <a href="">Privacy</a></li>
         <li> <a href="">Terms</a></li>
         <li> <a href="">Settings</a></li>
