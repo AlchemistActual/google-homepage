@@ -6,19 +6,21 @@
         font-size: small;
     }
    li a {
-        padding: 10px 12px;
+        padding: 8px 10px;
         display: block;
         text-align: center;
         text-decoration: none;
-       
+        color:rgb(102, 102, 102);
     }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+        
     }
     .topleft {
+        padding-top: 5px;
         display: flex;
         float: left;
     }
@@ -50,13 +52,23 @@
     .field {
         display: flex;
         justify-content: center;
+        position: relative;
+        
+    }
+    .mic {
+        position: absolute;
+        padding-left: 430px;
+        padding-top: 15px;
+    }
+    .mag {
+        position: absolute;
+        padding-right: 430px;
+        padding-top: 15px;
     }
     .search {
-        width: 470px;
-        height: 40px;
+        padding: 16px 150px;
         border-radius: 30px;
-        border-color: rgb(240, 240, 240);
-        
+        border: 1px solid rgb(206, 206, 206);
     }
     .buttons {
         padding-top: 25px;
@@ -68,17 +80,18 @@
         background-color: rgb(240, 240, 240);
         border: none;
         color:rgb(102, 102, 102);
-        padding: 8px 16px;
+        padding: 10px 20px;
         border-radius: 2px;
+        font-size: 14px;
         
     }
     .flucky {
         background-color: rgb(240, 240, 240);
         border: none;
         color:rgb(102, 102, 102);
-        padding: 8px 16px;
+        padding: 10px 20px;
         border-radius: 2px;
-        
+        font-size: 14px;
     }
     .bottomleft {
         float: left;
@@ -92,10 +105,13 @@
         text-align: center;
     }
     .bottombar {
+        background-color: rgb(238, 238, 238);
         position: fixed;
+        padding-top: 5px;
         left: 0;
         bottom: 0;
         width: 100%;
+        font-size: 14px;
     }
     </style>
 
@@ -103,14 +119,14 @@
 <body>
     <header class="topbar">
         <ul class="topleft">
-            <li><a href="">About</a></li>
-            <li><a href="">Store</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
         </ul>
         <ul class="topright">
-            <li><a href="">Gmail</a></li>
-            <li><a href="">Images</a></li>
-            <li><a href=""><img class="menusprite" src=/img/menu.png></a></li>
-            <li><a href=""><button class="signin"> Sign in</button></a></li>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#"><img class="menusprite" src=/img/menu.png></a></li>
+            <li><a href="#"><button class="signin"> Sign in</button></a></li>
         </ul>
         
     </header>
@@ -121,7 +137,9 @@
            
         </div>
         <div class="field">
+            <img class="mag" src="img/mag.png" height=20/>
             <input class="search" type="text">
+            <img class="mic" src="img/microphone.png" height=20/>
         </form>
     </div>
     <form>
@@ -134,16 +152,16 @@
 
     <footer class="bottombar">
             <ul class="bottomleft">
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">How Search works</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search works</a></li>
             </ul>
             
        
             <ul class="bottomright">
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Settings</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
             </ul>
     </footer>
 </body>
